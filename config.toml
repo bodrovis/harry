@@ -1,0 +1,9 @@
+baseURL = "http://example.org/"
+languageCode = "ru-RU"
+title = "Гарри и вагон косяков"
+
+[params]
+custom_css = ["css/custom.css"]
+
+[markup.goldmark.renderer]
+unsafe = true

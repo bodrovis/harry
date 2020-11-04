@@ -1,0 +1,83 @@
+html {
+  font-size: 80%;
+}
+
+body {
+  color: #000;
+}
+
+footer {
+  margin-top: 2rem;
+  border-top: 1px solid #ccc;
+  padding-top: 2rem;
+}
+
+.mt-1 {
+  margin-top: 1em;
+}
+
+.book-main {
+  font-size: 1.6rem;
+}
+
+.book-main .row {
+  margin-top: 3em;
+}
+
+.book-main .row:first-of-type {
+  margin-top: 0;
+}
+
+.book-main .column p {
+  padding: 1em;
+  margin: 0;
+  height: 100%;
+}
+
+.book-main .text {
+  background-color: #e9e9e9;
+}
+
+.book-main .text .page-num {
+  background-color: #d1ecf1;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  border-radius: 0.3em;
+  font-size: 0.8em;
+  margin-right: 0.5em;
+}
+
+.book-main .explanation {
+  margin-top: 1em;
+  font-size: 0.8em;
+  color: #606c76;
+  display: block;
+  font-style: italic;
+}
+
+.book-main .comment {
+  background-color: #cce5ff;
+}
+
+.book-main .good {
+  background-color: #d4edda;
+}
+
+.book-main .bad {
+  background-color: #f8d7da;
+}
+
+.book-main .meh {
+  background-color: #fff3cd;
+}
+
+@media (max-width: 40.1rem) {
+  .row .column.column-60 {
+    flex: 0 0 auto;
+    max-width: 100%;
+  }
+
+  .book-main .column:nth-child(2) {
+    margin-top: 1em;
+  }
+}
