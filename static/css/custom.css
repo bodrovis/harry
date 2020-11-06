@@ -7,9 +7,31 @@ body {
 }
 
 footer {
-  margin-top: 2rem;
-  border-top: 1px solid #ccc;
+  margin: 2rem 0;
+  border-top: 1px solid #e9e9e9;
   padding-top: 2rem;
+}
+
+footer .to-top {
+  text-align: right;
+  text-decoration: underline;
+  font-size: 0.9em;
+}
+
+a:link, a:visited {
+  color: #2a535e;
+}
+
+a:hover, a:focus {
+  color: #397081;
+}
+
+a:active {
+  color: #418da5;
+}
+
+.chapter-title {
+  cursor: pointer;
 }
 
 .mt-1 {
@@ -34,7 +56,7 @@ footer {
   height: 100%;
 }
 
-.book-main .text {
+.book-main .text, .legend .text {
   background-color: #e9e9e9;
 }
 
@@ -45,6 +67,11 @@ footer {
   border-radius: 0.3em;
   font-size: 0.8em;
   margin-right: 0.5em;
+  cursor: pointer;
+}
+
+.book-main .text .page-num:hover, .book-main .text .page-num:focus {
+  background-color: #bee0e9;
 }
 
 .book-main .explanation {
@@ -55,19 +82,50 @@ footer {
   font-style: italic;
 }
 
-.book-main .comment {
+.well-wrapper {
+  font-size: 0.8em;
+  padding: 1em;
+  border: 1px solid #e9e9e9;
+  border-radius: 5px;
+  margin-bottom: 2em;
+}
+
+.well-wrapper ul {
+  margin: 0;
+}
+
+.well-wrapper li {
+  list-style-type: none;
+  font-size: 1em;
+}
+
+.well-wrapper li:last-of-type {
+  margin-bottom: 0;
+}
+
+.legend .legend-item {
+  display: inline-block;
+  padding: 10px;
+  margin-right: 5px;
+}
+
+.legend .comment, .book-main .comment {
   background-color: #cce5ff;
 }
 
-.book-main .good {
+.legend .page-num {
+  background-color: #d1ecf1;
+}
+
+.legend .good, .book-main .good {
   background-color: #d4edda;
 }
 
-.book-main .bad {
+.legend .bad, .book-main .bad {
   background-color: #f8d7da;
 }
 
-.book-main .meh {
+.legend .meh, .book-main .meh {
   background-color: #fff3cd;
 }
 

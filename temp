@@ -1,15 +1,18 @@
-<section class="row" id="page-15">
+<section class="row" id="page-27">
   <div class="column">
     <p class="text">
-      <span class="page-num">СТР</span>
+      <span class="page-num">СТР </span>
+
       <span class="explanation">
 
       </span>
     </p>
   </div>
   <div class="column column-60">
-    <p class="comment">
+    <p class="meh">
 
     </p>
   </div>
 </section>
+
+<h2 id="chapter-3" class="mt-1 chapter-title">Глава 3</h2>

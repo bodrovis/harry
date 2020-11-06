@@ -3,5 +3,8 @@
 {{ end }}
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
+
+  {{ partial "main/legend.html" . }}
+
   {{ .Content }}
 {{ end }}

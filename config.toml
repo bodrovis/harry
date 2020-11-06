@@ -4,6 +4,7 @@ title = "Гарри и вагон косяков"
 
 [params]
 custom_css = ["css/custom.css"]
+custom_js = ["js/custom.js"]
 
 [markup.goldmark.renderer]
 unsafe = true
