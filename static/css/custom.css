@@ -30,6 +30,15 @@ a:active {
   color: #418da5;
 }
 
+.pagination {
+  margin: 1em 0;
+  text-align: center;
+}
+
+.pagination a {
+  text-decoration: underline;
+}
+
 .chapter-title {
   cursor: pointer;
 }
