@@ -21,4 +21,10 @@ $(document).ready(function() {
     index_contents += '</ul>';
     $index.html(index_contents);
   }
+
+  let $nested_active = $('.main-menu .dropdown .is-active');
+
+  if($nested_active.length > 0) {
+    $nested_active.closest('.has-children').addClass('is-active')
+  }
 });

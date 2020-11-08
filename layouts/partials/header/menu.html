@@ -1,0 +1,24 @@
+{{ $currentPage := . }}
+
+<nav class="main-menu">
+  <ul class="parent-menu">
+    {{ range .Site.Menus.main }}
+      <li class="{{ if (eq $currentPage.URL .URL) }} is-active{{ end }} {{if .HasChildren}} has-children {{end}}">
+        <a href="{{ .URL }}">
+          {{ .Pre }}
+          {{ .Name }}
+        </a>
+
+        {{ if .HasChildren }}
+          <ul class="dropdown">
+            {{ range .Children }}
+              <li class="{{ if (eq $currentPage.URL .URL) }} is-active{{ end }}">
+                <a href="{{ .URL }}">{{ .Name }}</a>
+              </li>
+            {{ end }}
+          </ul>
+        {{ end }}
+      </li>
+    {{ end }}
+  </ul>
+</nav>
