@@ -3,31 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/books/</loc>
+    <loc>https://harry-pot.web.app/books/</loc>
     <lastmod>2020-11-04T23:23:58+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/books/filosofskyi_kamen/</loc>
+    <loc>https://harry-pot.web.app/</loc>
     <lastmod>2020-11-04T23:23:58+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/books/filosofskyi_kamen/part1/</loc>
+    <loc>https://harry-pot.web.app/books/filosofskyi_kamen/</loc>
     <lastmod>2020-11-04T23:23:58+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
-    <lastmod>2020-11-04T23:23:58+02:00</lastmod>
+    <loc>https://harry-pot.web.app/categories/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://harry-pot.web.app/tags/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://harry-pot.web.app/books/taynaya_komnata/</loc>
+  </url>
+  
+  <url>
+    <loc>https://harry-pot.web.app/books/taynaya_komnata/part1/</loc>
+  </url>
+  
+  <url>
+    <loc>https://harry-pot.web.app/books/filosofskyi_kamen/part1/</loc>
+  </url>
+  
+  <url>
+    <loc>https://harry-pot.web.app/books/filosofskyi_kamen/part2/</loc>
   </url>
   
 </urlset>

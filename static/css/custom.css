@@ -90,14 +90,11 @@ a:active {
 .main-menu > ul li {
   position: relative;
   margin: 0 8px;
-  padding-top: 20px;
-  padding-bottom: 20px;
   border-bottom: 1px solid #000;
 }
 
-.main-menu > ul li {
-  padding-right: 36px;
-  padding-left: 36px;
+.main-menu > ul li a {
+  padding: 20px 36px;
 }
 
 .main-menu > ul li ul {
@@ -112,12 +109,15 @@ a:active {
   transition: 200ms;
   transition-delay: 200ms;
   z-index: 1000;
-  margin-top: 21px;
+  margin-top: 1px;
   width: 100%;
 }
 
 .main-menu > ul li ul li {
   margin: 0;
+}
+
+.main-menu > ul li ul li a {
   padding: 8px 36px;
 }
 
