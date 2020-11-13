@@ -3,9 +3,9 @@ title: "Тайная комната - часть 1"
 draft: false
 ---
 
-<h2 id="chapter-1" class="chapter-title">Глава 1</h2>
-
 <article class="book-main">
+  <h2 id="chapter-2" class="chapter-title">Глава 2</h2>
+
   <section class="row" id="page-3">
     <div class="column">
       <p class="text">
@@ -842,24 +842,4 @@ draft: false
       </p>
     </div>
   </section>
-
-  <h2 id="chapter-10" class="mt-1 chapter-title">Глава 10</h2>
-
-  <section class="row" id="page-27">
-    <div class="column">
-      <p class="text">
-        <span class="page-num">СТР </span>
-
-        <span class="explanation">
-
-        </span>
-      </p>
-    </div>
-    <div class="column column-60">
-      <p class="meh">
-
-      </p>
-    </div>
-  </section>
-
 </article>

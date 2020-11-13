@@ -43,3 +43,9 @@ unsafe = true
     url = "/books/taynaya_komnata/part1/"
     parent = "taynaya_komnata"
     weight = 1
+  [[menu.main]]
+    identifier = "taynaya_komnata_part2"
+    name = "Часть 2"
+    url = "/books/taynaya_komnata/part2/"
+    parent = "taynaya_komnata"
+    weight = 2
