@@ -10,4 +10,5 @@ draft: false
 
 <ul>
   <li><a href="{{< ref "/books/filosofskyi_kamen" >}}">Философский камень</a></li>
+  <li><a href="{{< ref "/books/taynaya_komnata" >}}">Тайная комната</a></li>
 </ul>

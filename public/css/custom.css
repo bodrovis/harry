@@ -125,11 +125,12 @@ a:active {
   display: block;
 }
 
-.main-menu > ul li ul li:hover, .main-menu > ul li ul a:hover {
+.main-menu > ul li ul li:hover, .main-menu > ul li ul li:focus,
+.main-menu > ul li ul a:hover, .main-menu > ul li ul a:focus {
   background-color: #e9e9e9;
 }
 
-.main-menu > ul li:hover > ul {
+.main-menu > ul li:hover > ul, .main-menu > ul li:focus-within > ul {
   opacity: 1;
   visibility: visible;
   transition-delay: 0ms;
