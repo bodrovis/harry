@@ -18,4 +18,5 @@ draft: false
   <li><a href="{{< ref "/books/filosofskyi_kamen" >}}">Философский камень</a></li>
   <li><a href="{{< ref "/books/taynaya_komnata" >}}">Тайная комната</a></li>
   <li><a href="{{< ref "/books/uznik_azkabana" >}}">Узник Азкабана</a></li>
+  <li><a href="{{< ref "/books/kubok_ognya" >}}">Кубок огня</a></li>
 </ul>
