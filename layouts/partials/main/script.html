@@ -1,0 +1,29 @@
+<script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+    crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js" defer></script>
+{{ $mainJs := resources.Get "js/custom.js" | js.Build "custom.js" | minify | fingerprint }}
+<script src="{{ $mainJs.Permalink }}" defer></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-analytics.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyC5RKaNHXN9vJEGxiMRRbVw9zq2Pzz8ZnE",
+    authDomain: "harry-pot.firebaseapp.com",
+    databaseURL: "https://harry-pot.firebaseio.com",
+    projectId: "harry-pot",
+    storageBucket: "harry-pot.appspot.com",
+    messagingSenderId: "501202939272",
+    appId: "1:501202939272:web:234f472dd71758a1171e3d",
+    measurementId: "G-9PZPQPL0YK"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>

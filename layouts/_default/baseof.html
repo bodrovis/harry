@@ -9,28 +9,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
-    {{ range .Site.Params.custom_css -}}
-      <link rel="stylesheet" href="{{ . | absURL }}">
-    {{- end }}
+    {{ $css := resources.Get "css/custom.css" }}
+    {{ $style := $css | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
   </head>
   <body>
-    <header>
-      {{ partial "header/menu.html" . }}
-    </header>
-    <div class="container">
-      {{ block "main" . }}
-      {{ end }}
-      {{ block "footer" . }}
-        {{ partial "footer/main.html" . }}
-      {{ end }}
-    </div>
+    <main class="main-content">
+      <header>
+        {{ partial "header/menu.html" . }}
+      </header>
+      <div class="container">
+        {{ block "main" . }}
+        {{ end }}
+        {{ block "footer" . }}
+          {{ partial "footer/main.html" . }}
+        {{ end }}
+      </div>
+    </main>
 
-    {{ range .Site.Params.custom_js -}}
-      <script
-  			  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-  			  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
-  			  crossorigin="anonymous" defer></script>
-      <script src="{{ . | absURL }}" defer></script>
-    {{- end }}
+    {{ partial "main/age.html" . }}
+
+    {{ partial "main/script.html" . }}
   </body>
 </html>

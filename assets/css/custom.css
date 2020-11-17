@@ -257,6 +257,40 @@ a:active {
   background-color: #fff3cd;
 }
 
+.age-check {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 100000;
+  display: none;
+}
+
+.age-check .container {
+  height: 100%;
+}
+
+.age-check .age-check-inner {
+  align-items: center;
+  height: 80vh;
+  text-align: center;
+}
+
+.age-check a {
+  display: block;
+  font-size: 1.1em;
+  margin-top: 1em;
+  border: 1px solid #d1ecf1;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.age-check a:first-of-type {
+  margin-top: 0;
+}
+
 @media (max-width: 40.1rem) {
   .row .column.column-60 {
     flex: 0 0 auto;
@@ -265,5 +299,9 @@ a:active {
 
   .book-main .column:nth-child(2) {
     margin-top: 1em;
+  }
+
+  .age-check .age-check-inner {
+    flex-direction: row;
   }
 }

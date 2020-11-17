@@ -2,10 +2,6 @@ baseURL = "https://harry-pot.web.app/"
 languageCode = "ru-RU"
 title = "Гарри и вагон косяков"
 
-[params]
-custom_css = ["css/custom.css"]
-custom_js = ["js/custom.js"]
-
 [markup.goldmark.renderer]
 unsafe = true
 
@@ -49,3 +45,14 @@ unsafe = true
     url = "/books/taynaya_komnata/part2/"
     parent = "taynaya_komnata"
     weight = 2
+  [[menu.main]]
+    identifier = "uznik_azkabana"
+    name = "Узник Азкабана"
+    url = "/books/uznik_azkabana/"
+    weight = 3
+  [[menu.main]]
+    identifier = "uznik_azkabana_part1"
+    name = "Часть 1"
+    url = "/books/uznik_azkabana/part1/"
+    parent = "uznik_azkabana"
+    weight = 1
