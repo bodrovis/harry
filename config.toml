@@ -79,3 +79,26 @@ unsafe = true
     url = "/books/kubok_ognya/part2/"
     parent = "kubok_ognya"
     weight = 2
+  [[menu.main]]
+    identifier = "kubok_ognya_part3"
+    name = "Часть 3"
+    url = "/books/kubok_ognya/part3/"
+    parent = "kubok_ognya"
+    weight = 3
+  [[menu.main]]
+    identifier = "orden_feniksa"
+    name = "Орден феникса"
+    url = "/books/orden_feniksa/"
+    weight = 5
+  [[menu.main]]
+    identifier = "orden_feniksa_part1"
+    name = "Часть 1"
+    url = "/books/orden_feniksa/part1/"
+    parent = "orden_feniksa"
+    weight = 1
+  [[menu.main]]
+    identifier = "orden_feniksa_part2"
+    name = "Часть 2"
+    url = "/books/orden_feniksa/part2/"
+    parent = "orden_feniksa"
+    weight = 2
