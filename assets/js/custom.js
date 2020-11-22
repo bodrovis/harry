@@ -48,4 +48,22 @@ $(document).ready(function() {
   if($nested_active.length > 0) {
     $nested_active.closest('.has-children').addClass('is-active')
   }
+
+  $('.js-menu-toggler').click(function(e) {
+    e.preventDefault();
+    $this = $(this);
+    $parent = $this.closest('.js-menu');
+    $target = $parent.find($this.data('target'));
+    $target.toggleClass('visible');
+  });
+
+  $('.js-show-dialog').click(function(e) {
+    e.preventDefault();
+    $($(this).data('target')).show();
+  });
+
+  $('.js-close-dialog').click(function(e) {
+    e.preventDefault();
+    $(this).parent('.js-dialog').hide();
+  });
 });

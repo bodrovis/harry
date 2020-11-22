@@ -32,7 +32,7 @@ unsafe = true
     identifier = "taynaya_komnata"
     name = "Тайная комната"
     url = "/books/taynaya_komnata/"
-    weight = 2
+    weight = 3
   [[menu.main]]
     identifier = "taynaya_komnata_part1"
     name = "Часть 1"
@@ -49,7 +49,7 @@ unsafe = true
     identifier = "uznik_azkabana"
     name = "Узник Азкабана"
     url = "/books/uznik_azkabana/"
-    weight = 3
+    weight = 4
   [[menu.main]]
     identifier = "uznik_azkabana_part1"
     name = "Часть 1"
@@ -66,7 +66,7 @@ unsafe = true
     identifier = "kubok_ognya"
     name = "Кубок огня"
     url = "/books/kubok_ognya/"
-    weight = 4
+    weight = 5
   [[menu.main]]
     identifier = "kubok_ognya_part1"
     name = "Часть 1"
@@ -89,7 +89,7 @@ unsafe = true
     identifier = "orden_feniksa"
     name = "Орден феникса"
     url = "/books/orden_feniksa/"
-    weight = 5
+    weight = 6
   [[menu.main]]
     identifier = "orden_feniksa_part1"
     name = "Часть 1"

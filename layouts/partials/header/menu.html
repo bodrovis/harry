@@ -1,6 +1,12 @@
 {{ $currentPage := . }}
 
-<nav class="main-menu">
+<nav class="main-menu js-menu">
+  <a href="#" class="menu-toggler js-menu-toggler" data-target=".parent-menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </a>
+
   <ul class="parent-menu">
     {{ range .Site.Menus.main.ByWeight }}
       <li class="{{ if (eq $currentPage.RelPermalink .URL) }} is-active{{ end }} {{if .HasChildren}} has-children {{end}}">

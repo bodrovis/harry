@@ -8,7 +8,7 @@ draft: false
 </nav>
 
 <article class="book-main">
-  <h2 id="chapter-2" class="chapter-title">Глава 2</h2>
+  <h2 id="chapter-1" class="chapter-title">Глава 1</h2>
 
   <section class="row" id="page-3">
     <div class="column">
