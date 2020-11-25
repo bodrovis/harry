@@ -102,3 +102,9 @@ unsafe = true
     url = "/books/orden_feniksa/part2/"
     parent = "orden_feniksa"
     weight = 2
+  [[menu.main]]
+    identifier = "orden_feniksa_part3"
+    name = "Часть 3"
+    url = "/books/orden_feniksa/part3/"
+    parent = "orden_feniksa"
+    weight = 3
