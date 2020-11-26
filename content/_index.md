@@ -20,4 +20,5 @@ draft: false
   <li><a href="{{< ref "/books/uznik_azkabana" >}}">Узник Азкабана</a></li>
   <li><a href="{{< ref "/books/kubok_ognya" >}}">Кубок огня</a></li>
   <li><a href="{{< ref "/books/orden_feniksa" >}}">Орден феникса</a></li>
+  <li><a href="{{< ref "/books/princ_polukrovka" >}}">Принц-полукровка</a></li>
 </ul>

@@ -108,3 +108,14 @@ unsafe = true
     url = "/books/orden_feniksa/part3/"
     parent = "orden_feniksa"
     weight = 3
+  [[menu.main]]
+    identifier = "princ_polukrovka"
+    name = "Принц-полукровка"
+    url = "/books/princ_polukrovka/"
+    weight = 7
+  [[menu.main]]
+    identifier = "princ_polukrovka_part1"
+    name = "Часть 1"
+    url = "/books/princ_polukrovka/part1/"
+    parent = "princ_polukrovka"
+    weight = 1
