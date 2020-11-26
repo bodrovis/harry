@@ -34,13 +34,13 @@ $(document).ready(function() {
 
   let $index = $('.index-wrapper');
   if($index.length > 0) {
-    let index_contents = '<h5>Оглавление этой части</h5><ul class="index">';
+    let index_contents = '<ul class="index">';
     $('.chapter-title').each(function() {
       let $this = $(this);
       index_contents += '<li><a href="#' + $this.attr('id') + '">' + $this.text() + '</a></li>';
     });
     index_contents += '</ul>';
-    $index.html(index_contents);
+    $index.append(index_contents);
   }
 
   let $nested_active = $('.main-menu .dropdown .is-active');

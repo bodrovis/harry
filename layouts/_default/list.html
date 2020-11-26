@@ -1,3 +1,8 @@
+{{ define "title" }}
+  {{ .Title }} &ndash; {{ .Site.Title }}
+{{ end }}
+{{ define "desc" }}{{ .Params.meta_desc }}{{end}}
+
 {{ define "main" }}
 <main>
   <article>
