@@ -125,3 +125,14 @@ unsafe = true
     url = "/books/princ_polukrovka/part2/"
     parent = "princ_polukrovka"
     weight = 2
+  [[menu.main]]
+    identifier = "dary_smerti"
+    name = "Дары смерти"
+    url = "/books/dary_smerti/"
+    weight = 7
+  [[menu.main]]
+    identifier = "dary_smerti_part1"
+    name = "Часть 1"
+    url = "/books/dary_smerti/part1/"
+    parent = "dary_smerti"
+    weight = 1

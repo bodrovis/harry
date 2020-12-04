@@ -8,9 +8,9 @@ meta_desc: "Гарри Поттер и Философский камень: вс
   <a href="{{< ref "/books/filosofskyi_kamen/part2" >}}">Часть 2 &gt;&gt;</a>
 </nav>
 
-<h2 id="chapter-1" class="chapter-title">Глава 1</h2>
-
 <article class="book-main">
+  <h2 id="chapter-1" class="chapter-title">Глава 1</h2>
+  
   <section class="row" id="page-6">
     <div class="column">
       <p class="text">
