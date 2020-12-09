@@ -222,8 +222,11 @@ a:active {
   font-style: italic;
 }
 
-.well-wrapper {
+.index-wrapper {
   font-size: 0.8em;
+}
+
+.well-wrapper {
   padding: 1em;
   border-radius: 5px;
   margin-bottom: 2em;
