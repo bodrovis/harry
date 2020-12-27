@@ -6,13 +6,13 @@
 {{ $mainJs := resources.Get "js/custom.js" | js.Build "custom.js" | minify | fingerprint }}
 <script src="{{ $mainJs.Permalink }}" defer></script>
 
-<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js" defer></script>
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-analytics.js" defer></script>
 
-<script>
+<script defer>
   var firebaseConfig = {
     apiKey: "AIzaSyC5RKaNHXN9vJEGxiMRRbVw9zq2Pzz8ZnE",
     authDomain: "harry-pot.firebaseapp.com",
