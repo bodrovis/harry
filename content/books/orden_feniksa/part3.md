@@ -4,10 +4,6 @@ draft: false
 meta_desc: "Гарри Поттер и Орден феникса: все грехи, косяки и ошибки книги (часть 3)"
 ---
 
-<nav class="pagination">
-  <a href="{{< ref "/books/orden_feniksa/part2" >}}">&lt;&lt; Часть 2</a>
-</nav>
-
 <article class="book-main">
   <h2 id="chapter-27" class="mt-1 chapter-title">Глава 27</h2>
 

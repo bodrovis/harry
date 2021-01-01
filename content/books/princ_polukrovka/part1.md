@@ -4,10 +4,6 @@ draft: false
 meta_desc: "Гарри Поттер и принц-полукровка: все грехи, косяки и ошибки книги (часть 1)"
 ---
 
-<nav class="pagination">
-  <a href="{{< ref "/books/princ_polukrovka/part2" >}}">Часть 2 &gt;&gt;</a>
-</nav>
-
 <article class="book-main">
   <h2 id="chapter-1" class="mt-1 chapter-title">Глава 1</h2>
 

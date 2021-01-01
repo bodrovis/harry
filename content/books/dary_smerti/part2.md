@@ -4,10 +4,6 @@ draft: false
 meta_desc: "Гарри Поттер и Дары смерти: все грехи, косяки и ошибки книги (часть 2)"
 ---
 
-<nav class="pagination">
-  <a href="{{< ref "/books/dary_smerti/part1" >}}">&lt;&lt; Часть 1</a>
-</nav>
-
 <article class="book-main">
   <h2 id="chapter-16" class="mt-1 chapter-title">Глава 16</h2>
 

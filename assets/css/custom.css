@@ -1,5 +1,6 @@
 html {
   font-size: 80%;
+  background-color: #f8f8f8;
 }
 
 body {
@@ -13,7 +14,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.02em;
   font-weight: 600;
-  Font-family: Didot, 'Didot LT STD', 'Hoefler Text', Garamond, 'Calisto MT', 'Times New Roman', serif;
+  Font-family: Didot, 'Didot LT STD', 'Hoefler Text', 'Garamond', 'Calisto MT', 'Times New Roman', serif;
 }
 
 footer {
@@ -44,6 +45,7 @@ a:active {
 .main-menu {
   box-sizing: border-box;
   margin-bottom: 2em;
+  font-feature-settings: 'ss01' on;
 }
 
 .main-menu ul, .main-menu li {
@@ -116,7 +118,7 @@ a:active {
   opacity: 0;
   padding: 0;
   min-width: 160px;
-  background-color: #fff;
+  background-color: #f8f8f8;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -395,6 +397,30 @@ a:active {
   html {
     font-size: 70%;
   }
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.4rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  h6 {
+    font-size: 0.8rem;
+  }
+
   .main-menu {
     margin: 1rem 0 4rem 0;
   }

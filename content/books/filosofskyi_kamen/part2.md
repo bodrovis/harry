@@ -1,12 +1,8 @@
 ---
-title: "Философский камень - часть 2"
+title: "Философский камень — часть 2"
 draft: false
 meta_desc: "Гарри Поттер и Философский камень: все грехи, косяки и ошибки книги (часть 2)"
 ---
-
-<nav class="pagination">
-  <a href="{{< ref "/books/filosofskyi_kamen/part1" >}}">&lt;&lt; Часть 1</a>
-</nav>
 
 <article class="book-main">
   <h2 id="chapter-9" class="chapter-title">Глава 9</h2>

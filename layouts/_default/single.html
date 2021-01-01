@@ -2,12 +2,14 @@
   {{ .Title }} &ndash; {{ .Site.Title }}
 {{ end }}
 
-{{ define "desc" }}{{ .Params.meta_desc }}{{end}}
-
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
 
   {{ partial "main/legend.html" . }}
 
   {{ .Content }}
+
+  <p><small>{{ .Params.meta_desc }}</small></p>
 {{ end }}
+
+{{ define "desc" }}{{ .Params.meta_desc }}{{ end }}
