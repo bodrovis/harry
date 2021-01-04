@@ -6,24 +6,14 @@
 {{ $mainJs := resources.Get "js/custom.js" | js.Build "custom.js" | minify | fingerprint }}
 <script src="{{ $mainJs.Permalink }}" defer></script>
 
-<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js" defer></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-analytics.js" defer></script>
+<script>
+  (function(){
+    var t,i,e,n=window,o=document,a=arguments,s="script",r=["config","track","identify","visit","push","call","trackForm","trackClick"],c=function(){var t,i=this;for(i._e=[],t=0;r.length>t;t++)(function(t){i[t]=function(){return i._e.push([t].concat(Array.prototype.slice.call(arguments,0))),i}})(r[t])};for(n._w=n._w||{},t=0;a.length>t;t++)n._w[a[t]]=n[a[t]]=n[a[t]]||new c;i=o.createElement(s),i.async=1,i.src="//static.woopra.com/js/w.js",e=o.getElementsByTagName(s)[0],e.parentNode.insertBefore(i,e)
+  })("woopra");
 
-<script defer>
-  var firebaseConfig = {
-    apiKey: "AIzaSyC5RKaNHXN9vJEGxiMRRbVw9zq2Pzz8ZnE",
-    authDomain: "harry-pot.firebaseapp.com",
-    databaseURL: "https://harry-pot.firebaseio.com",
-    projectId: "harry-pot",
-    storageBucket: "harry-pot.appspot.com",
-    messagingSenderId: "501202939272",
-    appId: "1:501202939272:web:234f472dd71758a1171e3d",
-    measurementId: "G-9PZPQPL0YK"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
+  woopra.config({
+      domain: 'harry-pot.web.app'
+  });
+  woopra.track();
 </script>

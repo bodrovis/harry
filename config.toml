@@ -1,6 +1,7 @@
 baseURL = "https://harry-pot.web.app/"
 languageCode = "ru-RU"
 title = "Гарри и вагон косяков"
+enableRobotsTXT = true
 
 [markup.goldmark.renderer]
 unsafe = true
