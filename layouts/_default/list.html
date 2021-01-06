@@ -1,7 +1,9 @@
-{{ define "title" }}
-  {{ .Title }} &ndash; {{ .Site.Title }}
-{{ end }}
-{{ define "desc" }}{{ .Params.meta_desc }}{{end}}
+{{ define "title" }}{{ .Title }} &ndash; {{ .Site.Title }}{{ end }}
+{{ define "tw_title" }}{{ .Title }} &ndash; {{ .Site.Title }}{{ end }}
+{{ define "fb_title" }}{{ .Title }} &ndash; {{ .Site.Title }}{{ end }}
+{{ define "desc" }}{{ .Params.meta_desc }}{{ end }}
+{{ define "tw_desc" }}{{ .Params.meta_desc }}{{ end }}
+{{ define "fb_desc" }}{{ .Params.meta_desc }}{{ end }}
 
 {{ define "main" }}
 <main>

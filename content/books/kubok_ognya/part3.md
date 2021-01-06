@@ -5,7 +5,7 @@ meta_desc: "Гарри Поттер и Кубок огня: все грехи, �
 ---
 
 <article class="book-main">
-  <h2 id="chapter-27" class="mt-1 chapter-title">Глава 27</h2>
+  <h2 id="chapter-27" class="chapter-title">Глава 27</h2>
 
   <section class="row" id="page-459">
     <div class="column">

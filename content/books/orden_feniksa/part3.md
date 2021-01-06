@@ -1,11 +1,11 @@
 ---
-title: "Орден феникса: часть 3"
+title: "Орден феникса — часть 3"
 draft: false
 meta_desc: "Гарри Поттер и Орден феникса: все грехи, косяки и ошибки книги (часть 3)"
 ---
 
 <article class="book-main">
-  <h2 id="chapter-27" class="mt-1 chapter-title">Глава 27</h2>
+  <h2 id="chapter-27" class="chapter-title">Глава 27</h2>
 
   <section class="row" id="page-559">
     <div class="column">

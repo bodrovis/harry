@@ -6,11 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
     <meta name="description" content="{{ block "desc" . }}Все грехи, ошибки, нестыковки и косяки в книгах о Гарри Поттере.{{ end }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
-    {{ $css := resources.Get "css/custom.css" }}
+    {{ $custom := resources.Get "css/custom.css" }}
+    {{ $buttons := resources.Get "css/buttons.css" }}
+    {{ $grid := resources.Get "css/grid.css" }}
+    {{ $menu := resources.Get "css/menu.css" }}
+    {{ $book := resources.Get "css/book.css" }}
+    {{ $dialog := resources.Get "css/dialog.css" }}
+    {{ $responsive := resources.Get "css/responsive.css" }}
+    {{ $css := slice $custom $buttons $grid $menu $book $dialog $responsive | resources.Concat "css/bundle.css" }}
     {{ $style := $css | resources.Minify | resources.Fingerprint }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" media="all">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <meta name="robots" content="all">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:description" content="{{ block "tw_desc" . }}Все грехи, ошибки, нестыковки и косяки в книгах о Гарри Поттере.{{ end }}">
+    <meta name="twitter:title" content="{{ block "tw_title" . }}{{ .Site.Title }}{{ end }}">
+    <meta name="twitter:image" content="">
+
+    <meta property="og:image" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ block "fb_title" . }}{{ .Site.Title }}{{ end }}">
+    <meta property="og:description" content="{{ block "fb_desc" . }}Все грехи, ошибки, нестыковки и косяки в книгах о Гарри Поттере.{{ end }}">
+    <meta property="og:url" content="{{.Permalink}}">
+    <meta property="og:site_name" content="Гарри и вагон косяков">
   </head>
   <body>
     <main class="main-content">
@@ -25,8 +44,6 @@
         {{ end }}
       </div>
     </main>
-
-    {{ partial "main/age.html" . }}
 
     {{ partial "main/script.html" . }}
   </body>

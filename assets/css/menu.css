@@ -1,0 +1,127 @@
+.main-menu {
+  margin-bottom: 2em;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.main-menu ul, .main-menu li {
+  list-style: none;
+  margin: 0;
+}
+
+.main-menu ul li, .main-menu ul li a {
+  color: #000;
+  cursor: pointer;
+  transition: 200ms;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.main-menu ul li.is-active > a {
+  font-weight: 700
+}
+
+.main-menu ul li:hover, .main-menu ul li a:hover {
+  opacity: 1;
+}
+
+.main-menu ul li a {
+  display: flex;
+  align-items: center;
+}
+
+.main-menu > ul > li.has-children::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #000;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.main-menu ul .link::before {
+  padding-right: 0;
+  display: none;
+}
+
+.main-menu > ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-menu > ul.visible {
+  display: flex;
+}
+
+.main-menu > ul li {
+  position: relative;
+  margin: 0 8px;
+  border-bottom: 1px solid #000;
+}
+
+.main-menu > ul li a {
+  padding: 20px 36px;
+}
+
+.main-menu > ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  padding: 0;
+  min-width: 160px;
+  background-color: #f8f8f8;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 200ms;
+  transition-delay: 200ms;
+  z-index: 1000;
+  margin-top: 1px;
+  width: 100%;
+}
+
+.main-menu > ul li ul li {
+  margin: 0;
+}
+
+.main-menu > ul li ul li a {
+  padding: 8px 36px;
+}
+
+.main-menu > ul li ul li a {
+  display: block;
+}
+
+.main-menu > ul li ul li:hover, .main-menu > ul li ul li:focus,
+.main-menu > ul li ul a:hover, .main-menu > ul li ul a:focus {
+  background-color: #e9e9e9;
+}
+
+.main-menu > ul li:hover > ul, .main-menu > ul li:focus-within > ul {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0ms;
+}
+
+.main-menu .menu-toggler {
+  display: none;
+  margin-left: 2rem;
+  border: 1px #ccc solid;
+  border-radius: 5px;
+  padding: 0 5px;
+}
+
+.main-menu .menu-toggler:hover, .main-menu .menu-toggler:active {
+  background-color: #e9e9e9;
+}
+.main-menu .menu-toggler span {
+  display: block;
+  border-top: 1px solid #ccc;
+  margin: 7px 0;
+  width: 27px;
+  height: 1px;
+}
