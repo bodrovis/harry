@@ -498,7 +498,7 @@ meta_desc: "Гарри Поттер и Философский камень: вс
     </div>
   </section>
 
-  <section class="row" id="page-94">
+  <section class="row" id="page-94-1">
     <div class="column">
       <p class="text">
         <span class="page-num">СТР 94</span>

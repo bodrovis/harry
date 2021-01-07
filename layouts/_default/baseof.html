@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,18 +32,16 @@
     <meta property="og:site_name" content="Гарри и вагон косяков">
   </head>
   <body>
-    <main class="main-content">
-      <header>
-        {{ partial "header/menu.html" . }}
-      </header>
-      <div class="container">
-        {{ block "main" . }}
-        {{ end }}
-        {{ block "footer" . }}
-          {{ partial "footer/main.html" . }}
-        {{ end }}
-      </div>
-    </main>
+    <header>
+      {{ partial "header/menu.html" . }}
+    </header>
+    <div class="container">
+      {{ block "main" . }}
+      {{ end }}
+      {{ block "footer" . }}
+        {{ partial "footer/main.html" . }}
+      {{ end }}
+    </div>
 
     {{ partial "main/script.html" . }}
   </body>
