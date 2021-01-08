@@ -43,6 +43,7 @@ a:active {
 .button-dropdown {
   position: relative;
   padding-right: 35px !important;
+  transition: 200ms;
 }
 
 .button-dropdown::after {
