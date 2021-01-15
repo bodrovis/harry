@@ -10,10 +10,17 @@
   padding: 1em;
   margin: 0;
   height: 100%;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  word-wrap: break-word;
 }
 
 .book-main .text, .legend .text {
-  background-color: #e9e9e9;
+  background-color: #f1f1f1;
+}
+
+.book-main .column .text {
+  border-color: #b8b8b8;
 }
 
 .book-main .text, .book-main .comment, .book-main .bad, .book-main .meh, .book-main .good {
@@ -30,6 +37,7 @@
   margin-right: 0.5em;
   cursor: pointer;
   color: #f8f8f8;
+  transition: 500ms;
 }
 
 .book-main .text .page-num:hover, .book-main .text .page-num:focus {

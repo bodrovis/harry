@@ -43,6 +43,7 @@ a.show-legend {
   font-size: 2rem;
   font-weight: 500;
   color: #474747;
+  transition: 500ms;
 }
 
 a.show-legend:active {

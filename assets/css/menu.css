@@ -1,6 +1,7 @@
 .main-menu {
   margin-bottom: 2em;
   font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 1.4rem;
 }
 
 .main-menu ul, .main-menu li {
@@ -110,18 +111,26 @@
 .main-menu .menu-toggler {
   display: none;
   margin-left: 2rem;
-  border: 1px #ccc solid;
+  border: 1px #b8b8b8 solid;
   border-radius: 5px;
   padding: 0 5px;
+  transition: 500ms;
 }
 
 .main-menu .menu-toggler:hover, .main-menu .menu-toggler:active {
   background-color: #e9e9e9;
+  border-color: #606c76;
 }
+
+.main-menu .menu-toggler:hover span, .main-menu .menu-toggler:active span {
+  border-color: #606c76;
+}
+
 .main-menu .menu-toggler span {
   display: block;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #b8b8b8;
   margin: 7px 0;
   width: 27px;
   height: 1px;
+  transition: 500ms;
 }

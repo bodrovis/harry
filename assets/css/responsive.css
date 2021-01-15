@@ -14,9 +14,13 @@
   .row .column.column-60 {
     flex: 0 0 auto;
     max-width: 100%;
+    margin-top: -1.3em;
   }
   .book-main .row {
     flex-direction: column;
+  }
+  .book-main .column .text {
+    padding-bottom: 3rem;
   }
 }
 
