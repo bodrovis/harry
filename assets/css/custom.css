@@ -62,7 +62,6 @@ hr {
   overflow: visible;
 }
 
-dl,
 ol,
 ul {
   list-style: none;
@@ -70,13 +69,8 @@ ul {
   padding-left: 0;
 }
 
-dl dl,
-dl ol,
-dl ul,
-ol dl,
 ol ol,
 ol ul,
-ul dl,
 ul ol,
 ul ul {
   font-size: 90%;
@@ -96,21 +90,13 @@ small {
 }
 
 .button,
-button,
-dd,
-dt,
 li {
   margin-bottom: 1.0rem;
 }
 
 blockquote,
-dl,
-figure,
-form,
 ol,
 p,
-pre,
-table,
 ul {
   margin-bottom: 2.5rem;
 }
