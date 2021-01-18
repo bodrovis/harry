@@ -93,20 +93,36 @@
   background-color: #cce5ff;
 }
 
+.book-main .column .comment {
+  border-color: #69BAF4;
+}
+
 .legend .page-num {
   background-color: #d1ecf1;
 }
 
 .legend .good, .book-main .good {
-  background-color: #d4edda;
+  background-color: #D1F1E7;
+}
+
+.book-main .column .good {
+  border-color: #45CBA1;
 }
 
 .legend .bad, .book-main .bad {
-  background-color: #f8d7da;
+  background-color: #FFE4E0;
+}
+
+.book-main .column .bad {
+  border-color: #F1A298;
 }
 
 .legend .meh, .book-main .meh {
-  background-color: #fff3cd;
+  background-color: #FBF3CD;
+}
+
+.book-main .column .meh {
+  border-color: #DFBA72;
 }
 
 .index-wrapper {
