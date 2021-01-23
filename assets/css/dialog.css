@@ -30,29 +30,38 @@
   cursor: pointer;
 }
 
-a.show-legend {
+a.show-legend, a.top-top-link {
   position: fixed;
-  bottom: 40px;
-  left: -17px;
   z-index: 100;
   background-color: rgba(248, 248, 248, 0.85);
   border: 1px solid #B8B8B8;
-  padding: 5px 15px 5px 30px;
+  padding: 5px 15px;
   border-radius: 20px;
   font-family: 'Didot', 'Didot LT STD', 'Hoefler Text', 'Garamond', 'Calisto MT', 'Times New Roman', serif;
   font-size: 2rem;
   font-weight: 500;
   color: #474747;
   transition: 500ms;
+  bottom: 40px;
 }
 
-a.show-legend:active {
+a.show-legend {
+  left: -17px;
+  padding-left: 30px;
+}
+
+a.show-legend:active, a.top-top-link:active {
   box-shadow: inset 0px 4px 2px rgba(0, 0, 0, 0.15);
   color: #474747;
 }
 
-a.show-legend:hover {
+a.show-legend:hover, a.top-top-link:hover {
   background-color: #f8f8f8;
   border-color: #606c76;
   color: #474747;
+}
+
+a.top-top-link {
+  right: -17px;
+  padding-right: 30px;
 }

@@ -1,5 +1,5 @@
 .main-menu {
-  margin-bottom: 2em;
+  margin-bottom: 3em;
   font-family: 'Montserrat Alternates', sans-serif;
   font-size: 1.4rem;
 }
@@ -67,6 +67,7 @@
 
 .main-menu > ul li a {
   padding: 20px 36px;
+  padding-left: 22px;
 }
 
 .main-menu > ul li ul {
@@ -110,7 +111,7 @@
 
 .main-menu .menu-toggler {
   display: none;
-  margin-left: 2rem;
+  margin-right: 2rem;
   border: 1px #b8b8b8 solid;
   border-radius: 5px;
   padding: 0 5px;

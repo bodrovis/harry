@@ -8,11 +8,6 @@ unsafe = true
 
 [menu]
   [[menu.main]]
-    identifier = "main"
-    name = "Главная"
-    url = "/"
-    weight = 1
-  [[menu.main]]
     identifier = "filosofskyi_kamen"
     name = "Философский камень"
     url = "/books/filosofskyi_kamen/"
