@@ -35,14 +35,54 @@
       nested_active.closest('.has-children').classList.add('is-active');
     }
 
-    var index = document.querySelector('.index-wrapper');
+    var index = document.querySelector('.js-index-placeholder');
     if(!!index) {
-      var index_contents = '<div style="width: auto" class="index-toggle-visibility hidden"><ul class="index">';
+      var index_contents = '<ul class="index">';
       Array.prototype.forEach.call(document.querySelectorAll('.chapter-title'), function(el, _i){
         index_contents += '<li><a href="#' + el.getAttribute('id') + '">' + el.textContent + '</a></li>';
       });
-      index_contents += '</ul></div>';
-      index.innerHTML += index_contents;
+      index_contents += '</ul>';
+      index.innerHTML = index_contents;
+
+      var button = document.querySelector('.js-show-index');
+      var tooltip = document.querySelector('.js-index-placeholder');
+  
+      let popperInstance = null;
+
+      function create() {
+        popperInstance = Popper.createPopper(button, tooltip, {
+          strategy: 'absolute',
+          placement: 'top-start',
+          modifiers: [
+            {
+              name: 'offset',
+              options: {
+                offset: [-41, 8],
+              },
+            }
+          ],
+        });
+      }
+
+      function destroy() {
+        if (popperInstance) {
+          popperInstance.destroy();
+          popperInstance = null;
+        }
+      }
+  
+      button.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        this.classList.toggle('opened');
+        if(tooltip.hasAttribute('data-show')) {
+          tooltip.removeAttribute('data-show');
+          destroy();
+        } else {
+          tooltip.setAttribute('data-show', '');
+          create();
+        }
+      });
     }
 
     document.addEventListener('click', function(e) {

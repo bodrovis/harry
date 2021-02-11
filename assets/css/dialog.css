@@ -30,7 +30,7 @@
   cursor: pointer;
 }
 
-a.show-legend, a.top-top-link {
+a.show-legend, a.top-top-link, a.show-index {
   position: fixed;
   z-index: 100;
   background-color: rgba(248, 248, 248, 0.85);
@@ -45,17 +45,17 @@ a.show-legend, a.top-top-link {
   bottom: 40px;
 }
 
-a.show-legend {
+a.show-legend, a.show-index {
   left: -17px;
   padding-left: 30px;
 }
 
-a.show-legend:active, a.top-top-link:active {
+a.show-legend:active, a.top-top-link:active, a.show-index:active {
   box-shadow: inset 0px 4px 2px rgba(0, 0, 0, 0.15);
   color: #474747;
 }
 
-a.show-legend:hover, a.top-top-link:hover {
+a.show-legend:hover, a.top-top-link:hover, .show-index {
   background-color: #f8f8f8;
   border-color: #606c76;
   color: #474747;
@@ -64,4 +64,12 @@ a.show-legend:hover, a.top-top-link:hover {
 a.top-top-link {
   right: -17px;
   padding-right: 30px;
+}
+
+a.show-index {
+  bottom: 120px;
+}
+
+a.opened {
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
 }

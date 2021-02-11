@@ -7,13 +7,12 @@
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
     <meta name="description" content="{{ block "desc" . }}Все грехи, ошибки, нестыковки и косяки в книгах о Гарри Поттере.{{ end }}">
     {{ $custom := resources.Get "css/custom.css" }}
-    {{ $buttons := resources.Get "css/buttons.css" }}
     {{ $grid := resources.Get "css/grid.css" }}
     {{ $menu := resources.Get "css/menu.css" }}
     {{ $book := resources.Get "css/book.css" }}
     {{ $dialog := resources.Get "css/dialog.css" }}
     {{ $responsive := resources.Get "css/responsive.css" }}
-    {{ $css := slice $custom $buttons $grid $menu $book $dialog $responsive | resources.Concat "css/bundle.css" }}
+    {{ $css := slice $custom $grid $menu $book $dialog $responsive | resources.Concat "css/bundle.css" }}
     {{ $style := $css | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" media="all">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">

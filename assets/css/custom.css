@@ -151,6 +151,23 @@ h6 {
   line-height: 1.4;
 }
 
+a {
+  background-color: transparent;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: #418da5;
+}
+
+a:hover, a:focus {
+  color: #37788C;
+}
+
+a:active {
+  color: #2D6273;
+}
+
 img {
   max-width: 100%;
   border-style: none;
