@@ -18,17 +18,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <meta name="robots" content="all">
 
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:description" content="{{ block "tw_desc" . }}Все грехи, ошибки, нестыковки и косяки в книгах о Гарри Поттере.{{ end }}">
     <meta name="twitter:title" content="{{ block "tw_title" . }}{{ .Site.Title }}{{ end }}">
-    <meta name="twitter:image" content="">
+    <meta name="twitter:image" content="{{ .Site.BaseURL}}/banner_twitter.jpg">
 
-    <meta property="og:image" content="">
+    <meta property="og:image" content="{{ .Site.BaseURL}}/banner_facebook.jpg">
     <meta property="og:type" content="website">
     <meta property="og:title" content="{{ block "fb_title" . }}{{ .Site.Title }}{{ end }}">
     <meta property="og:description" content="{{ block "fb_desc" . }}Все грехи, ошибки, нестыковки и косяки в книгах о Гарри Поттере.{{ end }}">
     <meta property="og:url" content="{{.Permalink}}">
     <meta property="og:site_name" content="Гарри и вагон косяков">
+    <meta property="og:image:width" content="Гарри и вагон косяков">
+    <meta property="og:image:height" content="Гарри и вагон косяков">
   </head>
   <body>
     <header>

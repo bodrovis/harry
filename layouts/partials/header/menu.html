@@ -1,4 +1,9 @@
-<a href="/"><img src="/banner.jpg"></a>
+<a href="/">
+  <picture>
+    <source media="(max-width:50rem)" srcset="/banner_mobile_large.jpg" style="width: 100%; height: auto;" alt="Гарри и вагон косяков">
+    <img src="/banner.jpg" alt="Гарри и вагон косяков" width="100%" height="auto">
+  </picture>
+</a>
 
 {{ $currentPage := . }}
 
