@@ -22,7 +22,7 @@
   }
 
   function ready(fn) {
-    if (document.readyState != 'loading'){
+    if (document.readyState !== 'loading'){
       fn();
     } else {
       document.addEventListener('DOMContentLoaded', fn);
@@ -119,7 +119,7 @@
       if ("key" in evt) {
         isEscape = (evt.key === "Escape" || evt.key === "Esc");
       } else {
-        isEscape = (evt.keyCode === 27);
+        isEscape = (evt.code === 27);
       }
       if (isEscape) {
         document.querySelector('.js-dialog').style.display = 'none';
