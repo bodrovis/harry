@@ -1264,5 +1264,6 @@ meta_desc: "Гарри Поттер и Узник Азкабана: все гр�
 </article>
 
 <nav class="pagination">
-  <a href="{{< ref "/books/uznik_azkabana/part1" >}}">&lt;&lt; Часть 1</a>
+  <a href="{{< ref "/books/uznik_azkabana/part1" >}}">&lt;&lt; Часть 1</a> |
+  <a href="{{< ref "/books/kubok_ognya/part1" >}}">Следующая книга &gt;&gt;</a>
 </nav>

@@ -1341,5 +1341,6 @@ meta_desc: "Гарри Поттер и Кубок огня: все грехи, �
 </article>
 
 <nav class="pagination">
-  <a href="{{< ref "/books/kubok_ognya/part2" >}}">&lt;&lt; Часть 2</a>
+  <a href="{{< ref "/books/kubok_ognya/part2" >}}">&lt;&lt; Часть 2</a> |
+  <a href="{{< ref "/books/orden_feniksa/part1" >}}">Следующая книга &gt;&gt;</a>
 </nav>

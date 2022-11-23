@@ -823,5 +823,6 @@ meta_desc: "Гарри Поттер и принц-полукровка: все �
 </article>
 
 <nav class="pagination">
-  <a href="{{< ref "/books/princ_polukrovka/part1" >}}">&lt;&lt; Часть 1</a>
+  <a href="{{< ref "/books/princ_polukrovka/part1" >}}">&lt;&lt; Часть 1</a> |
+  <a href="{{< ref "/books/dary_smerti/part1" >}}">Следующая книга &gt;&gt;</a>
 </nav>

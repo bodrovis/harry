@@ -1792,5 +1792,6 @@ meta_desc: "Гарри Поттер и Орден феникса: все гре�
 </article>
 
 <nav class="pagination">
-  <a href="{{< ref "/books/orden_feniksa/part2" >}}">&lt;&lt; Часть 2</a>
+  <a href="{{< ref "/books/orden_feniksa/part2" >}}">&lt;&lt; Часть 2</a> |
+  <a href="{{< ref "/books/princ_polukrovka/part1" >}}">Следующая книга &gt;&gt;</a>
 </nav>
