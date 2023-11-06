@@ -5,6 +5,7 @@
     <link>https://harrypot.lol/tags/</link>
     <description>Recent content in Tags on Гарри и вагон косяков</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ru-RU</language><atom:link href="https://harrypot.lol/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>ru-RU</language>
+    <atom:link href="https://harrypot.lol/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
