@@ -125,14 +125,6 @@
   border-color: #DFBA72;
 }
 
-.js-index-placeholder {
-  display: none;
-}
-
-.js-index-placeholder[data-show] {
-  display: block;
-}
-
 .index {
   margin-bottom: 0;
   border: 1px solid #b8b8b8;
