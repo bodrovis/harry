@@ -3,6 +3,8 @@ languageCode = "ru-RU"
 title = "Гарри и вагон косяков"
 enableRobotsTXT = true
 
+disableKinds = ["taxonomy"]
+
 [markup.goldmark.renderer]
 unsafe = true
 
