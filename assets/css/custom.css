@@ -1,11 +1,6 @@
-/*!
-  * Based on Milligram
-  * https://milligram.io
- */
-
 *,
-*:after,
-*:before {
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -18,14 +13,14 @@ html {
 }
 
 body {
+  margin: 0;
   font-size: 1.6em;
   line-height: 1.6;
   color: #000;
-  font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Montserrat", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: 500;
   font-style: normal;
   letter-spacing: 0.02em;
-  margin: 0;
 }
 
 main {
@@ -57,7 +52,7 @@ blockquote *:last-child {
 hr {
   border: 0;
   border-top: 0.1rem solid #f4f5f6;
-  margin: 3.0rem 0;
+  margin: 3rem 0;
   height: 0;
   overflow: visible;
 }
@@ -74,7 +69,7 @@ ol ul,
 ul ol,
 ul ul {
   font-size: 90%;
-  margin: 1.5rem 0 1.5rem 3.0rem;
+  margin: 1.5rem 0 1.5rem 3rem;
 }
 
 ol {
@@ -91,7 +86,7 @@ small {
 
 .button,
 li {
-  margin-bottom: 1.0rem;
+  margin-bottom: 1rem;
 }
 
 blockquote,
@@ -110,12 +105,19 @@ p {
   margin-top: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   letter-spacing: 0.02em;
   font-weight: 600;
-  font-family: Didot, 'Didot LT STD', 'Hoefler Text', 'Garamond', 'Calisto MT', 'Times New Roman', serif;
-  margin-bottom: 2.0rem;
+  font-family:
+    Didot, "Didot LT STD", "Hoefler Text", "Garamond", "Calisto MT",
+    "Times New Roman", serif;
   margin-top: 0;
+  margin-bottom: 2rem;
 }
 
 h1 {
@@ -135,13 +137,13 @@ h3 {
 
 h4 {
   font-size: 2.2rem;
-  letter-spacing: -.08rem;
+  letter-spacing: -0.08rem;
   line-height: 1.35;
 }
 
 h5 {
   font-size: 1.8rem;
-  letter-spacing: -.05rem;
+  letter-spacing: -0.05rem;
   line-height: 1.5;
 }
 
@@ -155,17 +157,19 @@ a {
   background-color: transparent;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
   text-decoration: none;
   color: #418da5;
 }
 
-a:hover, a:focus {
-  color: #37788C;
+a:hover,
+a:focus {
+  color: #37788c;
 }
 
 a:active {
-  color: #2D6273;
+  color: #2d6273;
 }
 
 img {
@@ -203,6 +207,7 @@ img {
   margin-bottom: 2em;
 }
 
-.hidden, [hidden] {
+.hidden,
+[hidden] {
   display: none !important;
 }

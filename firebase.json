@@ -6,19 +6,55 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "headers": [{
-      "source": "**/*.@(jpg|jpeg|gif|png|css|js|svg|ttf|woff2|webp|eot|woff)",
-      "headers": [{
-        "key": "Cache-Control",
-        "value": "max-age=15552000"
-      }]
-    }, {
-      "source": "404.html",
-      "headers": [{
-        "key": "Cache-Control",
-        "value": "max-age=15552000"
-      }]
-    }],
+    "headers": [
+      {
+        "source": "**/*.@(jpg|jpeg|gif|png|css|js|svg|ttf|woff2|webp|eot|woff)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=31536000, immutable"
+          }
+        ]
+      },
+      {
+        "source": "404.html",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache"
+          }
+        ]
+      },
+      {
+        "source": "**",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache"
+          },
+          {
+            "key": "X-Content-Type-Options",
+            "value": "nosniff"
+          },
+          {
+            "key": "Referrer-Policy",
+            "value": "strict-origin-when-cross-origin"
+          },
+          {
+            "key": "X-Frame-Options",
+            "value": "DENY"
+          },
+          {
+            "key": "X-XSS-Protection",
+            "value": "0"
+          },
+          {
+            "key": "Permissions-Policy",
+            "value": "accelerometer=(), ambient-light-sensor=(), autoplay=(), camera=(), clipboard-read=(), clipboard-write=(), display-capture=(), document-domain=(), encrypted-media=(), fullscreen=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), screen-wake-lock=(), sync-xhr=(), usb=(), web-share=(), xr-spatial-tracking=()"
+          }
+        ]
+      }
+    ],
     "cleanUrls": true,
     "trailingSlash": true
   }

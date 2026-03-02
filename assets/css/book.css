@@ -13,9 +13,11 @@
   border-radius: 20px;
   border: 2px solid transparent;
   word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
-.book-main .text, .legend .text {
+.book-main .text,
+.legend .text {
   background-color: #f1f1f1;
 }
 
@@ -23,12 +25,16 @@
   border-color: #b8b8b8;
 }
 
-.book-main .text, .book-main .comment, .book-main .bad, .book-main .meh, .book-main .good {
-  font-family: 'Montserrat Alternates', sans-serif;
+.book-main .text,
+.book-main .comment,
+.book-main .bad,
+.book-main .meh,
+.book-main .good {
+  font-family: "Montserrat Alternates", sans-serif;
 }
 
 .book-main .text .page-num {
-  background-color: #52B3D1;
+  background-color: #52b3d1;
   display: inline-block;
   padding: 0.25em 0.5em;
   border-radius: 0.3em;
@@ -40,12 +46,13 @@
   transition: 500ms;
 }
 
-.book-main .text .page-num:hover, .book-main .text .page-num:focus {
-  background-color: #37788C;
+.book-main .text .page-num:hover,
+.book-main .text .page-num:focus {
+  background-color: #37788c;
 }
 
 .book-main .text .page-num:active {
-  background-color: #2D6273;
+  background-color: #2d6273;
 }
 
 .book-main .explanation {
@@ -89,40 +96,44 @@
   margin-right: 5px;
 }
 
-.legend .comment, .book-main .comment {
+.legend .comment,
+.book-main .comment {
   background-color: #cce5ff;
 }
 
 .book-main .column .comment {
-  border-color: #69BAF4;
+  border-color: #69baf4;
 }
 
 .legend .page-num {
   background-color: #d1ecf1;
 }
 
-.legend .good, .book-main .good {
-  background-color: #D1F1E7;
+.legend .good,
+.book-main .good {
+  background-color: #d1f1e7;
 }
 
 .book-main .column .good {
-  border-color: #45CBA1;
+  border-color: #45cba1;
 }
 
-.legend .bad, .book-main .bad {
-  background-color: #FFE4E0;
+.legend .bad,
+.book-main .bad {
+  background-color: #ffe4e0;
 }
 
 .book-main .column .bad {
-  border-color: #F1A298;
+  border-color: #f1a298;
 }
 
-.legend .meh, .book-main .meh {
-  background-color: #FBF3CD;
+.legend .meh,
+.book-main .meh {
+  background-color: #fbf3cd;
 }
 
 .book-main .column .meh {
-  border-color: #DFBA72;
+  border-color: #dfba72;
 }
 
 .index {
@@ -130,7 +141,7 @@
   border: 1px solid #b8b8b8;
   border-radius: 20px;
   padding: 0.8em 1em;
-  background-color: rgba(248, 248, 248, 1);
+  background-color: #f8f8f8;
   border-left-width: 0;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
@@ -143,7 +154,11 @@
 .index li:last-child {
   margin-bottom: 0;
 }
-.index a, .index a:focus, .index a:active, .index a:visited, .index a:focus {
+
+.index a,
+.index a:focus,
+.index a:active,
+.index a:visited {
   color: #474747;
   text-decoration: none;
 }

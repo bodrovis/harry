@@ -1,22 +1,37 @@
-<a href="/">
+<a href="{{ "/" | relURL }}" class="site-logo" aria-label="Гарри и вагон косяков — на главную">
   <picture>
-    <source media="(max-width:50rem)" srcset="/banner_mobile.webp" style="width: 100%; height: auto;" alt="Гарри и вагон косяков">
-    <img src="/banner.webp" alt="Гарри и вагон косяков" width="100%" height="auto">
+    <source
+      media="(max-width: 50rem)"
+      srcset="{{ "/banner_mobile.webp" | relURL }}">
+    <img
+      src="{{ "/banner.webp" | relURL }}"
+      alt="Гарри и вагон косяков">
   </picture>
 </a>
 
 {{ $currentPage := . }}
 
-<nav class="main-menu js-menu">
-  <a href="#" class="menu-toggler js-menu-toggler" data-target=".parent-menu" aria-label="Выберите книгу, о грехах которой вы хотите почитать">
+<nav class="main-menu js-menu" role="navigation" aria-label="Основное меню">
+  <button
+    class="menu-toggler js-menu-toggler"
+    type="button"
+    data-target=".parent-menu"
+    aria-label="Выберите книгу, о грехах которой вы хотите почитать"
+    aria-expanded="false"
+    aria-controls="main-menu-list">
     <span></span>
     <span></span>
     <span></span>
-  </a>
+  </button>
 
-  <ul class="parent-menu">
+  <ul class="parent-menu" id="main-menu-list">
     {{ range .Site.Menus.main.ByWeight }}
-      <li class="{{ if (eq $currentPage.RelPermalink .URL) }} is-active{{ end }} {{if .HasChildren}} has-children {{end}}">
+      {{ $isActive := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
+      <li class="
+          menu-item
+          {{ if $isActive }} is-active{{ end }}
+          {{ if .HasChildren }} has-children{{ end }}
+        ">
         <a href="{{ .URL }}">
           {{ .Pre }}
           {{ .Name }}
@@ -25,7 +40,8 @@
         {{ if .HasChildren }}
           <ul class="dropdown">
             {{ range .Children }}
-              <li class="{{ if (eq $currentPage.RelPermalink .URL) }} is-active{{ end }}">
+              {{ $childActive := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
+              <li class="submenu-item{{ if $childActive }} is-active{{ end }}">
                 <a href="{{ .URL }}">{{ .Name }}</a>
               </li>
             {{ end }}

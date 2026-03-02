@@ -1,7 +1,7 @@
 .container {
   margin: 0 auto;
-  max-width: 112.0rem;
-  padding: 0 2.0rem;
+  max-width: 112rem;
+  padding: 0 2rem;
   position: relative;
   width: 100%;
 }
@@ -65,7 +65,8 @@
   margin-left: 25%;
 }
 
-.row .column.column-offset-33, .row .column.column-offset-34 {
+.row .column.column-offset-33,
+.row .column.column-offset-34 {
   margin-left: 33.3333%;
 }
 
@@ -81,7 +82,8 @@
   margin-left: 60%;
 }
 
-.row .column.column-offset-66, .row .column.column-offset-67 {
+.row .column.column-offset-66,
+.row .column.column-offset-67 {
   margin-left: 66.6666%;
 }
 
@@ -112,7 +114,8 @@
   max-width: 25%;
 }
 
-.row .column.column-33, .row .column.column-34 {
+.row .column.column-33,
+.row .column.column-34 {
   flex: 0 0 33.3333%;
   max-width: 33.3333%;
 }
@@ -132,7 +135,8 @@
   max-width: 60%;
 }
 
-.row .column.column-66, .row .column.column-67 {
+.row .column.column-66,
+.row .column.column-67 {
   flex: 0 0 66.6666%;
   max-width: 66.6666%;
 }
@@ -152,14 +156,14 @@
   max-width: 90%;
 }
 
-.row .column .column-top {
+.row .column.column-top {
   align-self: flex-start;
 }
 
-.row .column .column-bottom {
+.row .column.column-bottom {
   align-self: flex-end;
 }
 
-.row .column .column-center {
+.row .column.column-center {
   align-self: center;
 }

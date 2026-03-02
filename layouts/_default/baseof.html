@@ -1,58 +1,66 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta name="viewport" content="width=device-width">
-    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
-    <meta name="description" content="{{ block "desc" . }}Все грехи, ошибки, нестыковки и косяки в книгах о Гарри Поттере.{{ end }}">
-    {{ $custom := resources.Get "css/custom.css" }}
-    {{ $grid := resources.Get "css/grid.css" }}
-    {{ $menu := resources.Get "css/menu.css" }}
-    {{ $book := resources.Get "css/book.css" }}
-    {{ $dialog := resources.Get "css/dialog.css" }}
-    {{ $responsive := resources.Get "css/responsive.css" }}
-    {{ $css := slice $custom $grid $menu $book $dialog $responsive | resources.Concat "css/bundle.css" }}
-    {{ $style := $css | resources.Minify | resources.Fingerprint }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" media="all">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-    <noscript>
-      <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap" rel="stylesheet">
-    </noscript>
-    <meta name="robots" content="all">
+<html lang="{{ or .Site.LanguageCode `ru` }}">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+  <meta name="description"
+    content="{{ block "desc" . }}Все грехи, ошибки, нестыковки и косяки в книгах о Гарри Поттере.{{ end }}">
+  {{ $custom := resources.Get "css/custom.css" }}
+  {{ $grid := resources.Get "css/grid.css" }}
+  {{ $menu := resources.Get "css/menu.css" }}
+  {{ $book := resources.Get "css/book.css" }}
+  {{ $dialog := resources.Get "css/dialog.css" }}
+  {{ $responsive := resources.Get "css/responsive.css" }}
+  {{ $css := slice $custom $grid $menu $book $dialog $responsive | resources.Concat "css/bundle.css" }}
+  {{ $style := $css | resources.Minify | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" media="all">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap" rel="stylesheet"
+    media="print" onload="this.media='all'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap" rel="stylesheet">
+  </noscript>
+  <meta name="robots" content="all">
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:description" content="{{ block "tw_desc" . }}Все грехи, ошибки, нестыковки и косяки в книгах о Гарри Поттере.{{ end }}">
-    <meta name="twitter:title" content="{{ block "tw_title" . }}{{ .Site.Title }}{{ end }}">
-    <meta name="twitter:image" content="{{ .Site.BaseURL}}banner_twitter.jpg">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="canonical" href="{{ .Permalink }}">
 
-    <meta property="og:image" content="{{ .Site.BaseURL}}banner_twitter.jpg">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="{{ block "fb_title" . }}{{ .Site.Title }}{{ end }}">
-    <meta property="og:description" content="{{ block "fb_desc" . }}Все грехи, ошибки, нестыковки и косяки в книгах о Гарри Поттере.{{ end }}">
-    <meta property="og:url" content="{{.Permalink}}">
-    <meta property="og:site_name" content="Гарри и вагон косяков">
-    <meta property="og:image:width" content="1640px">
-    <meta property="og:image:height" content="820px">
-  </head>
-  <body>
-    <header>
-      {{ partial "header/menu.html" . }}
-    </header>
-    <div class="container">
-      {{ block "main" . }}
-      {{ end }}
-      {{ block "footer" . }}
-        {{ partial "footer/main.html" . }}
-      {{ end }}
-    </div>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:description"
+    content="{{ block "tw_desc" . }}Все грехи, ошибки, нестыковки и косяки в книгах о Гарри Поттере.{{ end }}">
+  <meta name="twitter:title" content="{{ block "tw_title" . }}{{ .Site.Title }}{{ end }}">
+  {{ $banner := "banner_twitter.jpg" | absURL }}
+  <meta name="twitter:image" content="{{ $banner }}">
+  <meta property="og:image" content="{{ $banner }}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ block "fb_title" . }}{{ .Site.Title }}{{ end }}">
+  <meta property="og:description"
+    content="{{ block "fb_desc" . }}Все грехи, ошибки, нестыковки и косяки в книгах о Гарри Поттере.{{ end }}">
+  <meta property="og:url" content="{{.Permalink}}">
+  <meta property="og:site_name" content="Гарри и вагон косяков">
+  <meta property="og:image:width" content="1640px">
+  <meta property="og:image:height" content="820px">
+</head>
 
-    {{ partial "main/script.html" . }}
-  </body>
+<body>
+  <header>
+    {{ partial "header/menu.html" . }}
+  </header>
+  <div class="container">
+    {{ block "main" . }}
+    {{ end }}
+    {{ block "footer" . }}
+    {{ partial "footer/main.html" . }}
+    {{ end }}
+  </div>
+
+  {{ partial "main/script.html" . }}
+</body>
+
 </html>

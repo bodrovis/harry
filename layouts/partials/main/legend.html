@@ -1,9 +1,17 @@
-<a href="#" class="show-legend js-show-dialog" data-target="#dialog-legend">Легенда</a>
+<a href="#dialog-legend" class="show-legend js-show-dialog" data-target="#dialog-legend" role="button"
+  aria-haspopup="dialog" aria-expanded="false" aria-controls="dialog-legend">
+  Легенда
+</a>
 
-<div class="dialog js-dialog" id="dialog-legend">
-  <a class="close-dialog js-close-dialog">&times;</a>
+<div class="dialog js-dialog" id="dialog-legend" role="dialog" aria-modal="true" aria-labelledby="dialog-legend-title"
+  aria-hidden="true">
   <div class="dialog-content">
+    <button type="button" class="close-dialog js-close-dialog" aria-label="Закрыть легенду">
+      &times;
+    </button>
+
     <article class="legend-wrapper well-wrapper">
+      <h2 id="dialog-legend-title" class="legend-title">Легенда</h2>
       <ul class="legend">
         <li>
           <span class="legend-item good"></span>
@@ -11,7 +19,9 @@
         </li>
         <li>
           <span class="legend-item comment"></span>
-          Нейтральные комментарии, шутейки, умные (и не очень) мысли, риторические вопросы, на которые, однако, хотелось бы получить ответ. Могут встречаться отсылки к другим произведениям, играм или фильмам, однако автор оставляет за собой право их дополнительно не объяснять.
+          Нейтральные комментарии, шутейки, умные (и не очень) мысли, риторические вопросы, на которые, однако, хотелось
+          бы получить ответ. Могут встречаться отсылки к другим произведениям, играм или фильмам, однако автор оставляет
+          за собой право их дополнительно не объяснять.
         </li>
         <li>
           <span class="legend-item meh"></span>
@@ -27,7 +37,8 @@
         </li>
         <li>
           <span class="legend-item page-num"></span>
-          Просто номер страницы в книге, ничего криминального. Нумерация идёт по изданию "Росмэн". По номеру страницы можно кликнуть, чтобы получить постоянную ссылку в адресной строке браузера.
+          Просто номер страницы в книге, ничего криминального. Нумерация идёт по изданию "Росмэн". По номеру страницы
+          можно кликнуть, чтобы получить постоянную ссылку в адресной строке браузера.
         </li>
       </ul>
     </article>
