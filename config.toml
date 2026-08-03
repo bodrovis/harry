@@ -1,5 +1,5 @@
 baseURL = "https://harrypot.lol/"
-languageCode = "ru-RU"
+locale = 'en-us'
 title = "Гарри и вагон косяков"
 enableRobotsTXT = true
 
